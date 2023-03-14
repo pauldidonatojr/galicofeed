@@ -3,9 +3,9 @@ import axios from 'axios'
 import styled from 'styled-components'
 
 const ArticleCard = styled.div`
-display: grid;
-justify-content: center;
-align-items: center;
+ display: grid;
+ justify-content: center;
+ align-items: center;
  margin-bottom: 20px;
  border: 1px solid #ccc;
  padding: 20px;
@@ -70,7 +70,7 @@ const Button = styled.button`
  padding: 10px 20px;
  border-radius: 5px;
  font-size: 16px;
-width: 50vh;
+ width: 40vh;
  cursor: pointer;
  &:hover {
   background-color: #005fa3;
@@ -110,8 +110,7 @@ function NewsList() {
      <ArticleTitle>{article.title}</ArticleTitle>
      <ArticleContent>{article.content}</ArticleContent>
 
-      <Button onClick={() => handleArticleClick(article)}> Open</Button>
-
+     <Button onClick={() => handleArticleClick(article)}> Open</Button>
     </ArticleCard>
    ))}
    {selectedArticle && (
